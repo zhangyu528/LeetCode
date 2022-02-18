@@ -1,5 +1,12 @@
 # LeetCode
-
+## 热身
+* [66. 加一](https://leetcode-cn.com/problems/plus-one/)
+* [1491. 去掉最低工资和最高工资后的工资平均值](https://leetcode-cn.com/problems/average-salary-excluding-the-minimum-and-maximum-salary/)
+* [1779. 找到最近的有相同 X 或 Y 坐标的点](https://leetcode-cn.com/problems/find-nearest-point-that-has-the-same-x-or-y-coordinate/)
+* [506. 相对名次](https://leetcode-cn.com/problems/relative-ranks/)
+* [500. 键盘行](https://leetcode-cn.com/problems/keyboard-row/)
+* [495. 提莫攻击](https://leetcode-cn.com/problems/teemo-attacking/)
+* [1086. 前五科的均分](https://leetcode-cn.com/problems/high-five/)
 ## 贪心
 ### Easy
 * [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
