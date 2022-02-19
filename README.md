@@ -7,7 +7,6 @@
 * [500. 键盘行](https://leetcode-cn.com/problems/keyboard-row/)
 * [495. 提莫攻击](https://leetcode-cn.com/problems/teemo-attacking/)
 * [1086. 前五科的均分](https://leetcode-cn.com/problems/high-five/)
-
 ## 排序
 ### Easy
 * [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
@@ -27,6 +26,14 @@
 * [剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
 * [LCP 28. 采购方案](https://leetcode-cn.com/problems/4xy4Wx/)
 * [剑指 Offer II 069. 山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL/)
+* [35. 搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/)
+* [278. 第一个错误的版本](https://leetcode-cn.com/problems/first-bad-version/)
+* [905. 按奇偶排序数组](https://leetcode-cn.com/problems/sort-array-by-parity/)
+* [977. 有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/)
+* [1099. 小于 K 的两数之和](https://leetcode-cn.com/problems/two-sum-less-than-k/)
+* [剑指 Offer 21. 调整数组顺序使奇数位于偶数前面](https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/)
+* [剑指 Offer 57. 和为s的两个数字](https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/)
+* [剑指 Offer II 006. 排序数组中两个数字之和](https://leetcode-cn.com/problems/kLl5u1/)
 ### Medium
 * [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
 * [15. 三数之和](https://leetcode-cn.com/problems/3sum/)
@@ -34,6 +41,30 @@
 * [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
 * [540. 有序数组中的单一元素](https://leetcode-cn.com/problems/single-element-in-a-sorted-array/)
 ### Hard
+
+## 双指针
+### Easy
+* [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
+* [88. 合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/)
+* [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
+* [283. 移动零](https://leetcode-cn.com/problems/move-zeroes/)
+* [674. 最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/)
+* [面试题 10.01. 合并排序的数组](https://leetcode-cn.com/problems/sorted-merge-lcci/)
+### Medium
+### Hard
+## 前缀和
+## 区间数组
+## 差分数组
+## 单调栈
+## 二维数组
+## 字符串
+## KMP
+## 链表
+## 位运算
+## Hash辅助
+## Stack辅助
+## Sort辅助
+## 摩尔投票
 ## 贪心
 ### Easy
 * [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
@@ -62,3 +93,7 @@
 ### Hard
 * [135. 分发糖果](https://leetcode-cn.com/problems/candy/)
 * [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/)
+
+## 回溯
+
+## 动态规划
