@@ -166,24 +166,24 @@
 ## 位运算
 ### Easy
 * [136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
-* [190. 颠倒二进制位](https://leetcode-cn.com/problems/reverse-bits/)
+* [190. 颠倒二进制位](https://leetcode-cn.com/problems/reverse-bits/)(重刷)
 * [191. 位1的个数](https://leetcode-cn.com/problems/number-of-1-bits/)
 * [231. 2 的幂](https://leetcode-cn.com/problems/power-of-two/)
 * [1720. 解码异或后的数组](https://leetcode-cn.com/problems/decode-xored-array/)
 * [面试题 17.04. 消失的数字](https://leetcode-cn.com/problems/missing-number-lcci/)
 ### Medium
 * [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)
-* [剑指 Offer 56 - II. 数组中数字出现的次数 II](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)
-* [剑指 Offer II 004. 只出现一次的数字 ](https://leetcode-cn.com/problems/WGki4K/)
+* [剑指 Offer 56 - II. 数组中数字出现的次数 II](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)(重刷)
+* [剑指 Offer II 004. 只出现一次的数字 ](https://leetcode-cn.com/problems/WGki4K/)(同上)
 ### Hard
 ## 数学
 ### Easy
-* [9. 回文数](https://leetcode-cn.com/problems/palindrome-number/)
-* [69. x 的平方根 ](https://leetcode-cn.com/problems/sqrtx/)
+* [9. 回文数](https://leetcode-cn.com/problems/palindrome-number/)(重点)
+* [69. x 的平方根 ](https://leetcode-cn.com/problems/sqrtx/)(重刷)
 * [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/)
 * [628. 三个数的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/)
 * [976. 三角形的最大周长](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
-* [1018. 可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5/)
+* [1018. 可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5/) (重刷)
 * [1281. 整数的各位积和之差](https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)
 * [1502. 判断能否形成等差数列](https://leetcode-cn.com/problems/can-make-arithmetic-progression-from-sequence/)
 * [1523. 在区间范围内统计奇数数目](https://leetcode-cn.com/problems/count-odd-numbers-in-an-interval-range/)
@@ -192,7 +192,7 @@
 * [2057. 值相等的最小索引](https://leetcode-cn.com/problems/smallest-index-with-equal-value/)
 * [剑指 Offer 17. 打印从1到最大的n位数](https://leetcode-cn.com/problems/da-yin-cong-1dao-zui-da-de-nwei-shu-lcof/)
 ### Medium
-* [剑指 Offer 45. 把数组排成最小的数](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)
+* [剑指 Offer 45. 把数组排成最小的数 ](https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/)(重点)
 ### Hard
 
 ## 贪心
