@@ -7,6 +7,16 @@
 * [500. 键盘行](https://leetcode-cn.com/problems/keyboard-row/)
 * [495. 提莫攻击](https://leetcode-cn.com/problems/teemo-attacking/)
 * [1086. 前五科的均分](https://leetcode-cn.com/problems/high-five/)
+
+## 排序
+### Easy
+* [215. 数组中的第K个最大元素](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/)
+* [912. 排序数组](https://leetcode-cn.com/problems/sort-an-array/)
+* [剑指 Offer 40. 最小的k个数](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)
+### Medium
+* [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
+* [581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
+### Hard
 ## 贪心
 ### Easy
 * [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
