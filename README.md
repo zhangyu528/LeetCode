@@ -17,6 +17,23 @@
 * [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
 * [581. 最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/)
 ### Hard
+## 二分查找
+### Easy
+* [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
+* [170. 两数之和 III - 数据结构设计](https://leetcode-cn.com/problems/two-sum-iii-data-structure-design/)
+* [1064. 不动点](https://leetcode-cn.com/problems/fixed-point/)
+* [1150. 检查一个数是否在数组中占绝大多数](https://leetcode-cn.com/problems/check-if-a-number-is-majority-element-in-a-sorted-array/)
+* [剑指 Offer 53 - I. 在排序数组中查找数字 I](https://leetcode-cn.com/problems/zai-pai-xu-shu-zu-zhong-cha-zhao-shu-zi-lcof/)
+* [剑指 Offer 53 - II. 0～n-1中缺失的数字](https://leetcode-cn.com/problems/que-shi-de-shu-zi-lcof/)
+* [LCP 28. 采购方案](https://leetcode-cn.com/problems/4xy4Wx/)
+* [剑指 Offer II 069. 山峰数组的顶部](https://leetcode-cn.com/problems/B1IidL/)
+### Medium
+* [11. 盛最多水的容器](https://leetcode-cn.com/problems/container-with-most-water/)
+* [15. 三数之和](https://leetcode-cn.com/problems/3sum/)
+* [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+* [167. 两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
+* [540. 有序数组中的单一元素](https://leetcode-cn.com/problems/single-element-in-a-sorted-array/)
+### Hard
 ## 贪心
 ### Easy
 * [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
