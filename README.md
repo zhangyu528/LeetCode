@@ -127,11 +127,11 @@
 ### Easy
 * [1. 两数之和](https://leetcode-cn.com/problems/two-sum/)
 * [217. 存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/)
-* [219. 存在重复元素 II](https://leetcode-cn.com/problems/contains-duplicate-ii/)
+* [219. 存在重复元素 II](https://leetcode-cn.com/problems/contains-duplicate-ii/)（滑窗)
 * [349. 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays/)
 * [575. 分糖果](https://leetcode-cn.com/problems/distribute-candies/)
 * [599. 两个列表的最小索引总和](https://leetcode-cn.com/problems/minimum-index-sum-of-two-lists/)
-* [645. 错误的集合](https://leetcode-cn.com/problems/set-mismatch/)
+* [645. 错误的集合](https://leetcode-cn.com/problems/set-mismatch/)(排序)
 * [1207. 独一无二的出现次数](https://leetcode-cn.com/problems/unique-number-of-occurrences/)
 * [面试题 01.01. 判定字符是否唯一](https://leetcode-cn.com/problems/is-unique-lcci/)
 * [面试题 01.02. 判定是否互为字符重排](https://leetcode-cn.com/problems/check-permutation-lcci/)
@@ -147,13 +147,9 @@
 ### Hard
 ## Sort辅助
 ### Easy
-* [252. 会议室](https://leetcode-cn.com/problems/meeting-rooms/)
-* [268. 丢失的数字](https://leetcode-cn.com/problems/missing-number/)
-* [976. 三角形的最大周长](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
-* [1200. 最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference/)
 * [1464. 数组中两元素的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-two-elements-in-an-array/)
 * [1636. 按照频率将数组升序排序](https://leetcode-cn.com/problems/sort-array-by-increasing-frequency/)
-* [剑指 Offer 61. 扑克牌中的顺子](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)
+* [剑指 Offer 61. 扑克牌中的顺子](https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/)(重点)
 ### Medium
 ### Hard
 ## 摩尔投票
@@ -170,8 +166,9 @@
 * [231. 2 的幂](https://leetcode-cn.com/problems/power-of-two/)
 * [1720. 解码异或后的数组](https://leetcode-cn.com/problems/decode-xored-array/)
 * [面试题 17.04. 消失的数字](https://leetcode-cn.com/problems/missing-number-lcci/)
+* [268. 丢失的数字](https://leetcode-cn.com/problems/missing-number/)
 ### Medium
-* [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)
+* [剑指 Offer 56 - I. 数组中数字出现的次数](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-lcof/)(重点)
 * [剑指 Offer 56 - II. 数组中数字出现的次数 II](https://leetcode-cn.com/problems/shu-zu-zhong-shu-zi-chu-xian-de-ci-shu-ii-lcof/)(重刷)
 * [剑指 Offer II 004. 只出现一次的数字 ](https://leetcode-cn.com/problems/WGki4K/)(同上)
 ### Hard
@@ -181,7 +178,6 @@
 * [69. x 的平方根 ](https://leetcode-cn.com/problems/sqrtx/)(重刷)
 * [414. 第三大的数](https://leetcode-cn.com/problems/third-maximum-number/)
 * [628. 三个数的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/)
-* [976. 三角形的最大周长](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
 * [1018. 可被 5 整除的二进制前缀](https://leetcode-cn.com/problems/binary-prefix-divisible-by-5/) (重刷)
 * [1281. 整数的各位积和之差](https://leetcode-cn.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/)
 * [1502. 判断能否形成等差数列](https://leetcode-cn.com/problems/can-make-arithmetic-progression-from-sequence/)
@@ -196,6 +192,9 @@
 
 ## 贪心
 ### Easy
+* [976. 三角形的最大周长](https://leetcode-cn.com/problems/largest-perimeter-triangle/)
+* [1200. 最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference/)
+* [252. 会议室](https://leetcode-cn.com/problems/meeting-rooms/)
 * [53. 最大子数组和](https://leetcode-cn.com/problems/maximum-subarray/)
 * [243. 最短单词距离](https://leetcode-cn.com/problems/shortest-word-distance/)
 * [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/)
