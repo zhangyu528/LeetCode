@@ -1,6 +1,6 @@
 # Runtime
 
-### 实例对象的数据结构？
+### 1.实例对象的数据结构？
 
 ```objective-c
 struct objc_object {
@@ -24,7 +24,7 @@ union isa_t
 }
 ```
 
-### 类对象的数据结构?
+### 2.类对象的数据结构?
 
 ```objective-c
 struct objc_class : objc_object {//继承实例对象
@@ -36,21 +36,22 @@ struct objc_class : objc_object {//继承实例对象
     class_rw_t *data() { 
         return bits.data(); // &FAST_DATA_MASK 获取地址值
     }
+}
 ```
 
-### 元类对象的数据结构? 
+### 3.元类对象的数据结构? 
 
 ```objective-c
 //元类对象 和 类对象 数据结构是一致的（同上）
 ```
 
-### Obj-C 对象、类的本质是通 过什么数据结构实现的？
+### 4.Obj-C 对象、类的本质是通 过什么数据结构实现的？
 
 * 结构体
 
 * **类对象和元类对象是唯一的**，对象是可以在运行时创建无数个的
 
-### `Obj-C` 中的类信息存放在哪里？
+### 5.`Obj-C` 中的类信息存放在哪里？
 
 类方法存储在元类。
 
@@ -58,13 +59,13 @@ struct objc_class : objc_object {//继承实例对象
 - 类方法存放在 meta-class 对象中。
 - 成员变量的具体指，存放在 instance 对象中。
 
-### 一个 `NSObject` 对象占用多少内存空间？
+### 6.一个 `NSObject` 对象占用多少内存空间？
 
 受限于内存分配的机制，一个 `NSObject`对象都会分配**16字节**的内存空间。但是实际上在64位下，只使用了 `8字节`，在32位下，只使用了 `4字节`。
 
 `iOS` 中，分配内存空间都是 `16字节` 的倍数。**如果存在继承关系，则需要父类的大小**
 
-### 说一下对 `isa` 指针的理解， 对象的`isa` 指针指向哪里？`isa` 指针有哪两种类型
+### 7.说一下对 `isa` 指针的理解， 对象的`isa` 指针指向哪里？`isa` 指针有哪两种类型
 
 * isa：是一个Class 类型的指针. 每个实例对象有个isa的指针,他指向对象的类，而Class里也有个isa的指针, 指向meteClass(元类)，而Class里还有个指向superclass对象的类
 
@@ -75,7 +76,7 @@ struct objc_class : objc_object {//继承实例对象
   typedef struct objc_object *id;
   ```
 
-### Category
+### 8.Category
 
 * 被添加在了 `class_rw_t` 的对应结构里
 
@@ -103,7 +104,7 @@ struct objc_class : objc_object {//继承实例对象
 * **私有**属性和方法写到类扩展
 * 子类**不能继承**附加项目
 
-### 如何给 `Category` 添加属性？关联对象以什么形式进行存储？
+### 9.如何给 `Category` 添加属性？关联对象以什么形式进行存储？
 
 * `关联对象` 以哈希表的格式，存储在一个全局的单例中
 
@@ -131,7 +132,7 @@ struct objc_class : objc_object {//继承实例对象
   @end
   ```
 
-### 扩展
+### 10.扩展
 
 ##### Swift Extension
 
@@ -139,9 +140,11 @@ struct objc_class : objc_object {//继承实例对象
 * 支持被**继承**
 * 注意扩展中不能有**存储类型**的属性，只可以添加**计算型实例属性和计算型类型属性**
 
-### Runtime 消息解析&转发
+### 11.Runtime 消息解析&转发
 
-如果当前类没有对应的实例方法，系统会调用如下方法，可以选择在这个时机动态添加
+* 消息**动态**解析
+
+  如果当前类没有对应的实例方法，系统会调用如下方法，可以选择在这个时机动态添加
 
 ```objective-c
 +(BOOL)resolveInstanceMethod:(SEL)sel {
@@ -174,7 +177,9 @@ void vc_newPerson(id obj,SEL _cmd) {
 }
 ```
 
-如果在当前类，以上两个方法都没有实现，可以将消息转发给其他的类处理
+* 消息**接受者**重定向
+
+  如果在当前类，以上两个方法都没有实现，可以将消息转发给其他的类处理
 
 ```objective-c
 - (id)forwardingTargetForSelector:(SEL)aSelector {
@@ -185,22 +190,29 @@ void vc_newPerson(id obj,SEL _cmd) {
 }
 ```
 
-### 如何运用 `Runtime` 字典转模型？
+* 消息重定向
+
+  如果经过消息动态解析、消息接受者重定向，Runtime 系统还是找不到相应的方法实现而无法响应消息，Runtime 系统会利用 `-methodSignatureForSelector:` 或者 `+methodSignatureForSelector:` 方法获取函数的参数和返回值类型。
+
+  - 如果 `methodSignatureForSelector:` 返回了一个 `NSMethodSignature` 对象（函数签名），Runtime 系统就会创建一个 `NSInvocation` 对象，并通过 `forwardInvocation:` 消息通知当前对象，给予此次消息发送最后一次寻找 IMP 的机会。
+  - 如果 `methodSignatureForSelector:` 返回 `nil`。则 Runtime 系统会发出 `doesNotRecognizeSelector:`  消息，程序也就崩溃了。
+
+### 12.如何运用 `Runtime` 字典转模型？
 
 `Runtime` 遍历 `ivar_list`,结合 `KVC` 赋值。
 
-### 如何运用 `Runtime` 进行模型的归解档
+### 13.如何运用 `Runtime` 进行模型的归解档
 
 ```
 Runtime` 遍历 `ivar_list
 ```
 
-### `Objective-C` 如何实现多重继承？
+### 14.`Objective-C` 如何实现多重继承？
 
 * 使用协议
 * 消息转发
 
-### Method Swizzling
+### 15.Method Swizzling
 
 * 实现异常保护
 * 实现埋点统计
@@ -243,21 +255,41 @@ Runtime` 遍历 `ivar_list
 
 
 
-### Isa Swizzling
+### 16.Isa Swizzling
 
 ```objectivec
 - (Class)class {//实例的类对象
     return object_getClass(self);
 }
 
-Class object_getClass(id obj)  //实例isa的类对象
+Class object_getClass(id obj)  //实例的isa返回
 {
     if (obj) return obj->getIsa();
     else return Nil;
 }
+//获取类对象
++ (Class)class OBJC_SWIFT_UNAVAILABLE("use 'aClass.self' instead");
 ```
 
-### Objective-C的+load方法调用原理分析区别?
+* **[self class] 与 [super class]**
+
+  ```objective-c
+  @implementation Son : Father
+     - (id)init
+     {
+         self = [super init];
+         if (self) {
+             NSLog(@"%@", NSStringFromClass([self class]));
+             NSLog(@"%@", NSStringFromClass([super class]));
+         }
+         return self;
+     }
+     @end
+  ```
+
+super 本质是一个**编译器标示符**，和 self 是指向的**同一个消息接受者**
+
+### 17.Objective-C的+load方法调用原理分析区别?
 
 **调用时机：**`+load`方法会在**Runtime**加载类对象(`class`)和分类(`category`)的时候调用
 
@@ -278,7 +310,7 @@ Class object_getClass(id obj)  //实例isa的类对象
 >
 > 2. 再调用分类(`category`)的+load方法：按照编译先后顺序调用（先编译的，先被调用）
 
-### Objective-C的+initialize方法调用原理分析
+### 18.Objective-C的+initialize方法调用原理分析
 
 * `+initialize`方法会在类对象  ***第一次***  接收到消息的时候调用
 
@@ -288,3 +320,45 @@ Class object_getClass(id obj)  //实例isa的类对象
 
 * 基于同样的原因，如果分类实现的`+initialize`，那么就会“覆盖”类对象本身的`+initialize`方法而被调用。
 
+### 19.Crash情况
+
+1.低系统使用高系统API产生的Crash。
+
+这个在Xcode中进入工程的Build Settings页面，在“Other C Flags”和“Other C++ Flags”中增加“-Wunguarded-availablility”，设置好之后，如果误调用了高版本API，Clang会检测到并报出警告。
+
+2.unrecognized selector类型的Crash，尤其接口返回数据类型有匹配的情况下产生的。
+
+3.NSString、NSMutableString及相关类簇产生的Crash。
+
+4.NSArray、NSMutableArray及相关类簇产生的Crash。
+
+5.NSDictionary、NSMutableDictionary及相关类簇产生的Crash。
+
+6.使用KVC产生Crash。
+
+7.KVO相关Crash。
+
+8.NSNotification相关Crash。
+
+9.NSTimer Crash。
+
+10.野指针 Crash。
+
+11.非主线程刷新UI 导致的Crash。
+
+12.内存打爆
+
+13.后台任务超时
+
+### 20.**捕获异常**
+
+检测连续闪退，可以通过捕获异常来实现，异常有以下种类：
+
+- Mach 异常：EXC_CRASH
+- UNIX 信号：SIGABRT
+- NSException 异常：应用层，通过 NSUncaughtExceptionHandler 捕获
+
+### 21.Crash第三开源方库
+
+* [kstenerud/KSCrash: The Ultimate iOS Crash Reporter (github.com)](https://github.com/kstenerud/KSCrash)
+* [microsoft/plcrashreporter: Reliable, open-source crash reporting for iOS, macOS and tvOS (github.com)](https://github.com/microsoft/plcrashreporter)
