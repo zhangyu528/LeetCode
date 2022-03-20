@@ -6,3 +6,4 @@
 * [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/)
 * [435. 无重叠区间](https://leetcode-cn.com/problems/non-overlapping-intervals/)
 * [452. 用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
+* [406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)
