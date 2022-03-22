@@ -8,3 +8,7 @@
 * [452. 用最少数量的箭引爆气球](https://leetcode-cn.com/problems/minimum-number-of-arrows-to-burst-balloons/)
 * [406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)
 * [135. 分发糖果](https://leetcode-cn.com/problems/candy/)
+
+
+# 双指针
+* [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
