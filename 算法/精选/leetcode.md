@@ -10,5 +10,5 @@
 * [135. 分发糖果](https://leetcode-cn.com/problems/candy/)
 
 
-# 双指针
+# 双指针精选
 * [26. 删除有序数组中的重复项](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)
