@@ -15,6 +15,7 @@
 * [80. 删除有序数组中的重复项 II](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array-ii/)
 * [27. 移除元素](https://leetcode-cn.com/problems/remove-element/)
 * [75. 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
+* [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
 
 
 # 滑窗精选
@@ -28,5 +29,4 @@
 * [540. 有序数组中的单一元素](https://leetcode-cn.com/problems/single-element-in-a-sorted-array/)
 * [1064. 不动点](https://leetcode-cn.com/problems/fixed-point/)
 * [33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)
-* [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
 
